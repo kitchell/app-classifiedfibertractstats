@@ -22,7 +22,7 @@ load(config.afq_fg);
 tract_info = cell(length(fg_classified), 6);
 
 for ifg=1:length(fg_classified)
-    tractFibers = fg_classified(ifg);
+    tractFibers = fg_classified(ifg).fibers;
     volVec=[];
 
     for istreamlines=1:length(tractFibers)
