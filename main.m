@@ -24,7 +24,9 @@ tract_info = cell(length(fg_classified), 6);
 for ifg=1:length(fg_classified)
     tractFibers = fg_classified(ifg).fibers;
     volVec=[];
-
+    streamLengths=[];
+    
+    
     for istreamlines=1:length(tractFibers)
         streamLengths(istreamlines)=sum(sqrt(sum(diff(tractFibers{istreamlines},1,2).^2)));
         volVec=horzcat(volVec,tractFibers{istreamlines});
