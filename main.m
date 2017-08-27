@@ -54,7 +54,7 @@ T = cell2table(tract_info);
 T.Properties.VariableNames = {'Tracts', 'FiberCount', 'MeanLength',...
     'STDLength', 'TotalLength', 'Volume'};
 
-writetable(T,'output_FiberStats.txt');
+writetable(T,'output_FiberStats.csv');
 savejson('', tract_info, 'output_FiberStats.json');
 
     
