@@ -8,6 +8,8 @@ if [ $ENV == "IUHPC" ]; then
 	module load matlab
 fi
 
+rm *.csv
+
 export MATLABPATH=$MATLABPATH:$SERVICE_DIR
 matlab -nodisplay -nosplash -r main
 
