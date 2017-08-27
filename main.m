@@ -55,7 +55,7 @@ T.Properties.VariableNames = {'Tracts', 'FiberCount', 'MeanLength',...
     'STDLength', 'TotalLength', 'Volume'};
 
 writetable(T,'output_FiberStats.csv');
-savejson('', tract_info, 'output_FiberStats.json');
+%savejson('', tract_info, 'output_FiberStats.json');
 
     
 end
