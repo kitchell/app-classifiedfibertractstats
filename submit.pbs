@@ -13,7 +13,7 @@ matlab -nodisplay -nosplash -r main
 
 
 
-if [ -s output_FiberStats.txt ]; 
+if [ -s output_FiberStats.csv ]; 
 then 
   echo 0 > finished
 else
