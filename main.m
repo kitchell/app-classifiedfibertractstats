@@ -1,15 +1,15 @@
 function main()
 
-switch getenv('ENV')
-case 'IUHPC'
-	disp('loading paths (HPC)')
-	addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
-	addpath(genpath('/N/u/hayashis/BigRed2/git/afq-master'))
-case 'VM'
-	disp('loading paths (VM)')
-	addpath(genpath('/usr/local/jsonlab'))
-	addpath(genpath('/usr/local/afq-master'))
-end
+% switch getenv('ENV')
+% case 'IUHPC'
+% 	disp('loading paths (HPC)')
+% 	addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
+% 	addpath(genpath('/N/u/hayashis/BigRed2/git/afq-master'))
+% case 'VM'
+% 	disp('loading paths (VM)')
+% 	addpath(genpath('/usr/local/jsonlab'))
+% 	addpath(genpath('/usr/local/afq-master'))
+% endaf
 
 % load config.json
 config = loadjson('config.json');
