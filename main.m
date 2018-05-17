@@ -41,7 +41,7 @@ for ifg=1:length(fg_classified)
     % node.  In theory if you wanted to resample this computation (i.e. how
     % many .5 mm voxels are occpupied by at least 1 tract node) you could
     % just multiply the volVec by a factor.  I.e. .5mm -> 2 or .25 mm -> 4
-    volume=length(unique(floor(volVec'),'rows'));
+    volume=length(unique(floor(volVec'*(1/config.voxelResize),'rows'));
 
     tract_info{ifg,1} = fg_classified(ifg).name;
     tract_info{ifg,2} = count;
