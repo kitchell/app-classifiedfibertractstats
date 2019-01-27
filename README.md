@@ -6,6 +6,7 @@ This application produces various statistics on classified fiber tracts
 
 ### Author
 - Lindsey Kitchell (kitchell@indiana.edu)
+- Daniel Bullock 
 
 
 ### Funding 
